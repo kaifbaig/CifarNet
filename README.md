@@ -31,9 +31,9 @@ The implementation pairs **PyTorch** for GPU-accelerated modeling with **Skorch*
 ## Approach / Workflow
 The project implements a structured deep learning experimental workflow:
 
-$$\text{Data Loading} \rightarrow \text{Data Understanding \& EDA} \rightarrow \text{Data Preprocessing} \rightarrow \text{CNN Baseline} \rightarrow \text{Stratified Holdout Validation} \rightarrow \text{Optuna Optimization} \rightarrow \text{Final Retraining} \rightarrow \text{Final Test Evaluation} \rightarrow \text{Error Analysis} \rightarrow \text{Model Checkpoint Saving}$$
+Data Loading → Data Understanding & EDA → Data Preprocessing → CNN Baseline → Stratified Holdout Validation → Optuna Optimization → Final Retraining → Final Test Evaluation → Error Analysis → Model Checkpoint Saving
 
-*(Note: In accordance with standard deep learning practice on large image datasets, a stratified holdout validation split is used rather than cross-validation).*
+*(Note: A stratified holdout validation split is used instead of cross-validation because CIFAR-10 is a large image dataset and repeated CNN training across multiple folds would be computationally expensive.)*
 
 ---
 
