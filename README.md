@@ -157,8 +157,8 @@ CifarNet/
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd CIFAR
+   git clone https://github.com/kaifbaig/CifarNet.git
+   cd CifarNet
    ```
 
 2. **Create and activate a virtual environment:**
