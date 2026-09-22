@@ -126,32 +126,30 @@ All values below represent the actual measured results from the executed noteboo
 ---
 
 ## Project Structure
-The repository structure reflects the actual files present in the project folder:
 
-```
-cifar10-cnn-project/
+The repository structure below reflects the files tracked and published in this GitHub repository. The CIFAR-10 dataset is downloaded locally at runtime and is not tracked.
+
+
+CifarNet/
 │
-├── CIFAR10.ipynb                 # Complete, executed end-to-end Jupyter Notebook
-├── CIFAR10_CODE_EXPLANATION.md   # Comprehensive viva and technical code reference
-├── README.md                     # Project documentation & instructions
-├── requirements.txt              # Pinned core dependencies
-├── .gitignore                    # Standard Python/PyTorch/Jupyter ignore rules
+├── CIFAR10.ipynb                 # Complete executed CNN project notebook
+├── README.md                     # Project documentation
+├── requirements.txt              # Project dependencies
+├── .gitignore                    # Git ignore rules
 │
-├── images/                       # Generated figures (300 DPI)
+├── images/                       # Generated project visualizations
 │   ├── baseline_training_loss.png
 │   ├── cifar10_class_distribution.png
 │   ├── cifar10_confusion_matrix.png
 │   ├── cifar10_pixel_distribution.png
 │   ├── cifar10_sample_images.png
 │   ├── cifar10_sample_predictions.png
-│   └── optimized_training_loss.png
+│   ├── optimized_training_loss.png
+│   ├── optuna_hyperparameter_importance.png
+│   └── optuna_optimization_history.png
 │
-├── model/                        # Saved model weights (ignored by Git)
-│   └── cifar10_cnn_model.pt      # PyTorch checkpoint (state_dict + best_params)
-│
-└── data/                         # CIFAR-10 binary cache (ignored by Git)
-    └── cifar-10-batches-py/
-```
+└── model/
+    └── cifar10_cnn_model.pt      # Trained PyTorch checkpoint
 
 ---
 

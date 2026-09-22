@@ -34,16 +34,6 @@ desktop.ini
 data/
 data/*
 
-# Model checkpoints & serialized weights (large binary files)
-model/*.pt
-model/*.pth
-model/*.ckpt
-model/*.joblib
-model/*.pkl
-*.pt
-*.pth
-*.ckpt
-
 # Experiment logs and profiler artifacts
 logs/
 runs/
