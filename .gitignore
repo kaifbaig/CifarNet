@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Jupyter Notebook checkpoints & autosave files
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating system & IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables & local secrets
+.env
+.env.*
+!.env.example
+
+# Datasets and local data cache (downloaded via torchvision)
+data/
+data/*
+
+# Model checkpoints & serialized weights (large binary files)
+model/*.pt
+model/*.pth
+model/*.ckpt
+model/*.joblib
+model/*.pkl
+*.pt
+*.pth
+*.ckpt
+
+# Experiment logs and profiler artifacts
+logs/
+runs/
+wandb/
+.pytest_cache/
+
+# Temporary / scratch files
+*.tmp
+*.temp
+scratch/
